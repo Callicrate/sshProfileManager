@@ -10,16 +10,6 @@ base_files = []
 
 
 def main(*_):
-    parser = argparse.ArgumentParser(description='render a file as a jinja2 template.')
-    parser.add_argument("-p", "--packer", help="toggle usage of  triple-brace formatting (i.e. {{{ variable }}})",
-                        dest="packer", action="store_true")
-    parser.add_argument('template_file', type=str,
-                        help='The jinja2 file to render ')
-    parser.add_argument('vars_file',
-                        help='The YAML-formatted variables file')
-    parser.add_argument('-v', help="single variable to include (format: VARIABLE=VALUE)", dest='vars', default=[], action="append")
-
-    args = parser.parse_args()
 
     engine()
 
