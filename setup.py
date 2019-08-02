@@ -7,7 +7,7 @@ setup(name='ssh-profile-manager',
       description='Manage multiple profiles under ~/.ssh/config.d',
       author='Joel Callicrate',
       author_email='joel.callicrate@gmail.com',
-      packages=['sshProfileManager.sshProfileManager'],
+      packages=['sshProfileManager'],
       entry_points={
             'console_scripts': [
                   'ssh-profile-manager = sshProfileManager.__main__:main',
